@@ -11,4 +11,5 @@
 - `index.html` — основной файл
 - `css/style.css` — стили
 - `js/script.js` — логика
-- `img/` — изображения: logo.svg, logo-dark.svg, moon.png, sun.png
+- `img/` — изображения
+
