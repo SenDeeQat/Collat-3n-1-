@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/collat.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <div class="logo">
+        <img id="logo-img" src="img/logo.svg" alt="Collat Logo">
+      </div>
+      <a href="/" class="brand">Collat</a>
+    </div>
+    <div class="theme-switcher">
+      <button id="theme-toggle" aria-label="Переключить тему">
+        <img id="theme-icon" class="theme-icon" src="img/moon.png" alt="Тема">
+      </button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Гипотеза Коллатца (3n+1)</h1>
+    <p class="description">Введите число или диапазон, чтобы увидеть, как числа сходятся к последовательности <b>4 → 2 → 1</b>.</p>
+
+    <div class="inputs">
+      <input type="number" id="singleInput" placeholder="Введите число">
+      <button onclick="computeSingle()">Вычислить</button>
+      <input type="number" id="rangeStart" placeholder="От">
+      <input type="number" id="rangeEnd" placeholder="До">
+      <button onclick="computeRange()">Диапазон</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
